@@ -1,2 +1,2 @@
 # CV-parth
-Visit parthtyagi15.github.io/CV-parth .
+Visit [My Personal Site.](parthtyagi15.github.io/CV-parth)
