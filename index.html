@@ -1,131 +1,507 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parth Tyagi</title>
+    <!--= Google Fonts =-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <title>👤Parth's Personal Site</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <!--= Remixicons=-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-<body >
-  <table cellspacing="10">
-    <tr>
-      <td><img src="images/parth.png" alt="Profile Image" width="200px"></td>
-      <td>
-        <h1>Parth Tyagi</h1>
-        <p><em><strong>Computer Science Student</strong></em></p>
-        <p><a href="https://www.linkedin.com/in/parth-tyagi-82104011b/"><em><strong>Linkedin</strong></em></a>
-          <a href="https://www.instagram.com/_tyagi.g/"><em><strong>Instagram</strong></em></a>
-          <a href="https://github.com/ParthTyagi15"><em><strong>Github</strong></em></a>
+    <!--= SwiperJS CSS =-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--= Main CSS =-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--= Header =-->
+    <header id="header" class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__brand">
+            <i class="ri-code-s-slash-line"></i>Parth Tyagi
+          </a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#hero" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#qualification" class="nav__link">Qualification</a>
+              </li>
+              <!-- <li class="nav__item">
+                <a href="#service" class="nav__link">Services</a>
+              </li> -->
+              <li class="nav__item">
+                <a href="#project" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__toggle">
+            <i id="nav-toggle" class="ri-menu-3-line"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--= main =-->
+    <main class="main">
+      <!--= Hero =-->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="d-grid hero__wrapper">
+            <div class="hero__content">
+              <h1 class="hero__title">Hi, I am Parth Tyagi.</h1>
+              <p class="hero__description">
+                I am a Computer Science Student currently pursuing my
+                bachelor's. My passion for programming has helped me in solving
+                1000+ questions across differnet coding platforms
+              </p>
+              <div class="hero__info">
+                <div class="hero__info-wrapper">
+                  <p class="hero__info-number">1000+</p>
+                  <h2 class="hero__info-title">DSA<br />questions</h2>
+                </div>
+                <div class="hero__info-wrapper">
+                  <p class="hero__info-number">3+</p>
+                  <h2 class="hero__info-title">
+                    Years of<br />experience in CP
+                  </h2>
+                </div>
+                <!-- <div class="hero__info-wrapper">
+                                <p class="hero__info-number">02+</p>
+                                <h2 class="hero__info-title">Companies<br> Worked</h2>
+                            </div> -->
+              </div>
+            </div>
+            <img src="assets/img/about.png" alt="Parth" class="hero__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--= About =-->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Who am I</span>
+          </div>
+          <div class="d-grid about__wrapper">
+            <div class="about__content">
+              <h3 class="about__title">I'm a Third year CS student.</h3>
+              <p class="about__description">
+                I am pursuing my bachelor's from The LNM Institute of
+                Information Technology and is expected to graduate in year 2025.
+                I have been able to maintain a CGPA of 9.15 and was awarded
+                merit scholarship for good CGPA. I have also made some projects
+                that you can find in the section below. Other than that, I have
+                a strong foundation in Data Structures and Algorithms, which i
+                find crucial for a good SDE.
+              </p>
+              <a href="#" class="btn btn--primary">Know More</a>
+            </div>
+            <div class="skills">
+              <h3 class="skills__title">
+                Technologies I've been working with:
+              </h3>
+              <div class="skills__wrapper">
+                <div class="skills__content">
+                  <h4 class="skills__subtitle">Backend</h4>
+                  <ul class="skills__list">
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Python
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Node.js
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Firebase
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> MongoDB
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> MySQL
+                    </li>
+                  </ul>
+                </div>
+                <div class="skills__content">
+                  <h4 class="skills__subtitle">Frontend</h4>
+                  <ul class="skills__list">
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> ReactJS
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> NextJS
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> TailwindCSS
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Typescript
+                    </li>
+                    <li class="skills__item">
+                      <i class="ri-arrow-right-s-fill"></i> Bootstrap
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--= Qualification =-->
+      <section id="qualification" class="section qualification">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Experience & Education</span>
+          </div>
+          <!--= Professional Experience =-->
+          <div class="qualification__wrapper">
+            <h3 class="qualification__name">
+              <i class="ri-briefcase-fill"></i>
+              Professional Experience
+            </h3>
+            <div class="d-grid qualification__content">
+              <!-- = Experience 1 = -->
+              <div class="qualification__item">
+                <h3 class="qualification__title">
+                  Teaching Assistant at LNMIIT
+                </h3>
+                <p class="qualification__description">
+                  I was responsible in assisting and mentoring sophomores in
+                  Relational Databases and MySQL.
+                </p>
+                <span class="qualification__date">Aug 2023 - Dec 2023</span>
+              </div>
+              <!--= Experience 2 =-->
+              <!-- <div class="qualification__item"> -->
+              <!-- <h3 class="qualification__title">Frontend Lead at Google</h3> -->
+              <!-- <p class="qualification__description"> It provides a convenient way for potential clients to -->
+              <!-- view your work while also allowing you to expand on your skills and services.</p> -->
+              <!-- <span class="qualification__date">2020 - 2022</span> -->
+              <!-- </div> -->
+              <!--= Experience 3 =-->
+              <!-- <div class="qualification__item"> -->
+              <!-- <h3 class="qualification__title">UI/UX Designer at Facebook</h3> -->
+              <!-- <p class="qualification__description"> It provides a convenient way for potential clients to -->
+              <!-- view your work while also allowing you to expand on your skills and services.</p> -->
+              <!-- <span class="qualification__date">2018 - 2020</span> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <!--= Education =-->
+          <div class="qualification__wrapper">
+            <h3 class="qualification__name">
+              <i class="ri-booklet-fill"></i>
+              Education
+            </h3>
+            <div class="d-grid qualification__content">
+              <!--= Education 1 =-->
+              <div class="qualification__item">
+                <h3 class="qualification__title">Bachelor's in Technology</h3>
+                <p class="qualification__description">
+                  Computer Science Engineering at The LNM Institute of
+                  Information Technology
+                </p>
+                <span class="qualification__date">2021 - 2025(expected)</span>
+              </div>
+              <!--= Education 2 =-->
+              <div class="qualification__item">
+                <h3 class="qualification__title">Class XII</h3>
+                <p class="qualification__description">
+                  Senior secondary Education from Delhi Public School Ghaziabad
+                </p>
+                <span class="qualification__date">2019 - 2021</span>
+              </div>
+              <!--= Education 3 =-->
+              <!-- <div class="qualification__item">
+                            <h3 class="qualification__title">Software Engineer</h3>
+                            <p class="qualification__description"> It provides a convenient way for potential clients to
+                                view your work while also allowing you to expand on your skills and services.</p>
+                            <span class="qualification__date">2011 - 2015</span>
+                        </div> -->
+            </div>
+          </div>
+          <div class="qualification__footer">
+            <p class="qualification__footer-text">See my full resume</p>
+            <a
+              href="https://drive.google.com/file/d/1mDccIbKy0fPDZML1cAZeLbM8cJnTsPNe/view?usp=sharing"
+              class="btn btn--primary"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--= services =-->
+      <!-- <section id="service" class="section service"> -->
+      <!-- <div class="container"> -->
+      <!-- <div class="section__header"> -->
+      <!-- <h2 class="section__title">Services</h2> -->
+      <!-- <span class="section__subtitle">What I do</span> -->
+      <!-- </div> -->
+      <!-- <div class="d-grid service__wrapper"> -->
+      <!--= service card 1 =-->
+      <!-- <div class="service__card"> -->
+      <!-- <div class="service__icon"> -->
+      <!-- <i class="ri-layout-4-fill"></i> -->
+      <!-- </div> -->
+      <!-- <h3 class="service__title">Frontend<br>Development</h3> -->
+      <!-- <a href="#" class="service__link">Know More</a> -->
+      <!-- </div> -->
+      <!--= service card 2 =-->
+      <!-- <div class="service__card"> -->
+      <!-- <div class="service__icon"> -->
+      <!-- <i class="ri-code-s-slash-line"></i> -->
+      <!-- </div> -->
+      <!-- <h3 class="service__title">Backend<br> Development</h3> -->
+      <!-- <a href="#" class="service__link">Know More</a> -->
+      <!-- </div> -->
+      <!-- = service card 3 = -->
+      <!-- <div class="service__card"> -->
+      <!-- <div class="service__icon"> -->
+      <!-- <i class="ri-pen-nib-fill"></i> -->
+      <!-- </div> -->
+      <!-- <h3 class="service__title">UI/UX<br> Design</h3> -->
+      <!-- <a href="#" class="service__link">Know More</a> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </section> -->
+
+      <!--= Projects =-->
+      <section id="project" class="section project">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">My recent work</span>
+          </div>
+          <div class="d-grid project__wrapper">
+            <!--= project 1 =-->
+            <div class="project__content">
+              <img
+                src="assets/img/deteci-i-mage.png"
+                alt="Detect-I-mage"
+                class="project__img"
+              />
+              <h3 class="project__title">Detect-I-mage</h3>
+              <p class="project__description">
+                It's an image detection web application which utilises ReactJS
+                as it's frontend and Python and Tensorflow's model ResNet as
+                backend and image detection model.
+              </p>
+              <a
+                href="https://github.com/ParthTyagi15/my-app"
+                class="project__link"
+                >View Project <i class="ri-arrow-right-line"></i
+              ></a>
+            </div>
+            <!--= project 2 =-->
+            <div class="project__content">
+              <img
+                src="assets/img/logo2.png"
+                alt="Leet-Clone"
+                class="project__img"
+                style="margin-bottom: 8rem"
+              />
+              <h3 class="project__title">Leet-Clone</h3>
+              <p class="project__description">
+                Clone of famous interview preparation site Leetcode. It uses
+                NextJS & TailwindCSS in frontend and Firebase as a backend.
+                Users can login and solve questions.
+              </p>
+              <a
+                href="https://leet-clone-alpha.vercel.app/"
+                class="project__link"
+                >View Project <i class="ri-arrow-right-line"></i
+              ></a>
+            </div>
+            <!--= project 3 =-->
+            <div class="project__content">
+              <img
+                src="assets/img/project1.jpg"
+                alt="IMS"
+                class="project__img"
+              />
+              <h3 class="project__title">Inventory Management System</h3>
+              <p class="project__description">
+                Developed a full stack Inventory Management System for
+                LNMIIT. The site was developed using NextJS and NodeJS and
+                ExpressJs. The inventory administrator can add items in the
+                inventory and issue items to the users. The user can submit
+                request for the issuing of any item.
+              </p>
+              <a href="https://lnmiit-inventory-management-frontend-parthtyagi15.vercel.app/" class="project__link"
+                >View Project <i class="ri-arrow-right-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--= Testimonials =-->
+      <!-- <section id="testimonial" class="section testimonial"> -->
+        <!-- <div class="container"> -->
+          <!-- <div class="section__header"> -->
+            <!-- <h2 class="section__title">Testimonials</h2> -->
+            <!-- <span class="section__subtitle">What my clients say</span> -->
+          <!-- </div> -->
+          <!-- <div class="testimonial__wrapper swiper"> -->
+            <!-- <div class="swiper-wrapper"> -->
+              <!-- = testimonial 1 = -->
+              <!-- <div class="testimonial__card swiper-slide"> -->
+                <!-- <img -->
+                  <!-- src="assets/img/testimonial1.jpg" -->
+                  <!-- alt="Natasha Smith" -->
+                  <!-- class="testimonial__img" -->
+                <!-- /> -->
+                <!-- <div class="testimonial__content"> -->
+                  <!-- <p class="testimonial__description"> -->
+                    <!-- It provides a convenient way for potential clients to view -->
+                    <!-- your work while also allowing you to expand on your skills -->
+                    <!-- and services. -->
+                  <!-- </p> -->
+                  <!-- <h3 class="testimonial__name">Natasha Smith</h3> -->
+                  <!-- <span class="testimonial__occupation" -->
+                    <!-- >UI/UX Designer at Dribbble</span -->
+                  <!-- > -->
+                <!-- </div> -->
+              <!-- </div> -->
+              <!-- ========= testimonial 2 ============ -->
+              <!-- <div class="testimonial__card swiper-slide"> -->
+                <!-- <img -->
+                  <!-- src="assets/img/testimonial2.jpg" -->
+                  <!-- alt="John Clarke" -->
+                  <!-- class="testimonial__img" -->
+                <!-- /> -->
+                <!-- <div class="testimonial__content"> -->
+                  <!-- <p class="testimonial__description"> -->
+                    <!-- It provides a convenient way for potential clients to view -->
+                    <!-- your work while also allowing you to expand on your skills -->
+                    <!-- and services. -->
+                  <!-- </p> -->
+                  <!-- <h3 class="testimonial__name">John Clarke</h3> -->
+                  <!-- <span class="testimonial__occupation" -->
+                    <!-- >Web Developer at Facebook</span -->
+                  <!-- > -->
+                <!-- </div> -->
+              <!-- </div> -->
+              <!-- ========= testimonial 3 ====== -->
+              <!-- <div class="testimonial__card swiper-slide"> -->
+                <!-- <img -->
+                  <!-- src="assets/img/testimonial3.jpg" -->
+                  <!-- alt="Emily Walker" -->
+                  <!-- class="testimonial__img" -->
+                <!-- /> -->
+                <!-- <div class="testimonial__content"> -->
+                  <!-- <p class="testimonial__description"> -->
+                    <!-- It provides a convenient way for potential clients to view -->
+                    <!-- your work while also allowing you to expand on your skills -->
+                    <!-- and services. -->
+                  <!-- </p> -->
+                  <!-- <h3 class="testimonial__name">Emily Walker</h3> -->
+                  <!-- <span class="testimonial__occupation" -->
+                    <!-- >Backend Developer at Google -->
+                  <!-- </span> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </section> -->
+
+      <!--======= Contact =======-->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="d-grid contact__wrapper">
+            <div class="contact__content">
+              <h2 class="contact__title">
+                Interested in working together? Let's talk
+              </h2>
+            </div>
+            <div class="contact__btn">
+              <a href="" class="btn btn--secondary">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--======== footer =====-->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="d-grid footer__wrapper">
+          <div class="footer__content">
+            <h4 class="footer__title">Follow Me</h4>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="https://linkedin.com/in/Tyagi-Parth" class="footer__social-link">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="https://www.instagram.com/_tyagi.g/" class="footer__social-link">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="https://twitter.com/ParthAsInDarth" class="footer__social-link">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="https://github.com/ParthTyagi15" class="footer__social-link">
+                  <i class="ri-github-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h4 class="footer__title">Email Me</h4>
+            <a href="mailto:iparth556@gmail.com" class="footer__contact">iparth556@gmail.com</a>
+          </div>
+          <div class="footer__content">
+            <h4 class="footer__title">Call Me</h4>
+            <a href="#" class="footer__contact">9560365311</a>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2024 Copyright. All Rights Reserved
         </p>
-      </td>
-    </tr>
-  </table>
+      </div>
+    </footer>
 
+    <!--======= SwiperJS  ======-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <p>Hi! I am currently a Computer Science Student pursuing my Undergraduate Degree from
-    <a href="https://www.lnmiit.ac.in/">The LNM Institute of Information Technology</a>. I am fluent in some programming languages
-    such as C++, C, Java, Python, Javascript. I am also frequent competitive programmer at <a href="https://codeforces.com/profile/ParthTyagi15">Codeforces</a>, <a href="https://www.codechef.com/users/tyagi07">Codechef</a> and <a
-      href="https://leetcode.com/ParthTyagi15/">Leetcode</a>. Other than
-    this my topics of interest are Web Development, Web3, Data Science and much more. Also I am sports
-    enthusiast and like million other Indians I have a distinct love for Cricket.
-  </p>
+    <!--======= ScrollReveal ======-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <hr>
-
-  <h3>Education</h3>
-  <table>
-    <thead>
-      <th>S.No.</th>
-      <th>Year</th>
-      <th>Institute</th>
-      <th>Grades</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1.</td>
-        <td>2007-2019</td>
-        <td>St.Mary's Convent School</td>
-        <td>Class Xth - 95.6%</td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>2019-2021</td>
-        <td>Delhi Public School Ghaziabad</td>
-        <td>Class XIIth - 98%</td>
-      </tr>
-      <tr>
-        <td>3.</td>
-        <td>2021-2025(expected)</td>
-        <td>The LNM Institute of Information Technology</td>
-        <td> 9.23 CGPA</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr>
-
-  <h3>Hobbies</h3>
-  <ol>
-    <li>Web Development</li>
-    <li>Playing Cricket or Basketball</li>
-    <li>Watching Series</li>
-    <li>Computers</li>
-  </ol>
-
-  <hr>
-
-
-  <h3>Skills</h3>
-  <table >
-    <tr>
-      <td>
-        <table cellspacing="5px">
-          <tr>
-            <td>DSA</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>C++</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-
-      <td>
-      <table cellspacing="5px">
-        <tr>
-          <td>CSS</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>⭐⭐</td>
-        </tr>
-        <tr>
-          <td>REST API</td>
-          <td>⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Github</td>
-          <td>⭐⭐</td>
-        </tr>
-      </table>
-    </td>
-    </tr>
-  </table>
-
-  <hr>
-
-  <a href="contact.html">Contact Me</a>
-</body>
-
+    <!--====== Main JS =======-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
